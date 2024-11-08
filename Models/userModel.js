@@ -1,8 +1,8 @@
 let users = [];
 
 class User {
-  constructor(name, age, email, password) {
-    this.name = name;
+  constructor(age, email, password) {
+    this.name = email.split("@")[0];
     this.age = age;
     this.email = email;
     this.password = password;
